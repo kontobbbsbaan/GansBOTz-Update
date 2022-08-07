@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let arietube = '6289509960601@s.whatsapp.net'
+  let arietube = '6283845409710@s.whatsapp.net'
   let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let c = pickRandom([a, b])
@@ -35,45 +35,9 @@ let handler = async (m, { conn }) => {
 ╚═══════════════╦༻
  Minat Hubungi Owner ║
 ╔═══════════════╩༻
-║☞ wa.me/6289509960601?text=Assalamualaikum%20permisi%20kak%20mau%20sewabot
+║☞ wa.me/6283845409710?text=Assalamualaikum%20permisi%20kak%20mau%20sewabot
 ║
 ╚═══════════════༻
-
-⳹⍣ 𝐎𝐩𝐞𝐧 𝐉𝐚𝐬𝐚 𝐉𝐚𝐝𝐢 𝐁𝐎𝐓 ⍣⳼
-
-╔═══════════════༻
-║ 〘༺ List Jadibot ༻〙
-╠❥1 Bulan+Owner = 10.000
-╠❥2 Bulan+Owner = 20.000
-╠❥Permanen+Owner = 25.000
-╚═══════╦═══════༻
-            ╚══════╦༻
-╔══════════════╩༻
-╠═〘 *Fasilitas BOT* 〙
-║☞ Tinggal Scan
-║☞ On 24 jam
-║☞ Bisa Scan Ulang
-║☞ ON tanpa Internet
-║☞ Fitur Bisa Di Check
-║☞ Bukan BOT Wibusoft
-╚═════╦══════════༻
-         ║
-╔═════╩════════════༻
-╠═〘 *Keuntungan Jadi BOT* 〙
-║☞ Bisa Sewa BOT
-║☞ Setting BOT
-║☞ No Owner Lu
-║☞ No BOT Lu
-║☞ Nama Owner Lu
-║☞ Bebas
-╚═══════════════╦༻
- Minat Hubungi Owner ║
-╔═══════════════╩༻
-║☞ wa.me/6289509960601?text=Assalamualaikum%20permisi%20kak%20mau%20Jadibot
-║
-╚═══════════════༻
-
-
 *
 `,
   buttonText: 'Harga Sesuai Pasaran',
@@ -81,10 +45,10 @@ let handler = async (m, { conn }) => {
   productListInfo: {
   productSections: [{
   title:'Klik untuk order',
-  products:[{productId:'7487741964584083'}]}],
-  headerImage: { productId: '7487741964584083',
+  products:[{productId:'p'}]}],
+  headerImage: { productId: 'p',
   jpegThumbnail: baper },
-  businessOwnerJid: `6289509960601@s.whatsapp.net`
+  businessOwnerJid: `6283845409710@s.whatsapp.net`
   },
   footerText: '',
   }},{})
