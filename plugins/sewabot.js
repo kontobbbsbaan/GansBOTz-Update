@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let arietube = '6283845409710@s.whatsapp.net'
+  let arietube = '6283833694338@s.whatsapp.net'
   let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let c = pickRandom([a, b])
@@ -38,17 +38,16 @@ let handler = async (m, { conn }) => {
 ║☞ wa.me/6283845409710?text=Assalamualaikum%20permisi%20kak%20mau%20sewabot
 ║
 ╚═══════════════༻
-*
 `,
   buttonText: 'Harga Sesuai Pasaran',
   listType: 2,
   productListInfo: {
   productSections: [{
   title:'Klik untuk order',
-  products:[{productId:'p'}]}],
-  headerImage: { productId: 'p',
+  products:[{productId:'5359465707433882'}]}],
+  headerImage: { productId: '5359465707433882',
   jpegThumbnail: baper },
-  businessOwnerJid: `6283845409710@s.whatsapp.net`
+  businessOwnerJid: `6283833694338@s.whatsapp.net`
   },
   footerText: '',
   }},{})
