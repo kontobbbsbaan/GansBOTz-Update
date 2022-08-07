@@ -32,8 +32,8 @@ let tags = {
   'audio': '𝗔𝗨𝗗𝗜𝗢',
   'maker': '𝗠𝗔𝗞𝗘𝗥',
 }
-let iggw = `https://instagram.com/b4c00t.dtz`
-let own = `https://wa.me/6289509960601`
+let iggw = `https://saweria.co/Kianganz`
+let own = `https://wa.me/6283845409710`
 
 const defaultMenu = {
   before: `
@@ -175,7 +175,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = Premium\n│ *Ⓛ* = Limit\n▣────────────⬣`,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍Instagram',
+               displayText: '📍Saweria',
                url: iggw
              }
 
