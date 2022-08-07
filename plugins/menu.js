@@ -64,7 +64,6 @@ const defaultMenu = {
   body: '│%cmd %islimit %isPremium',
   footer: '╰──────────────',
   after: `${global.namabot}
-𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐢𝐧𝐢 𝐝𝐢𝐛𝐮𝐚𝐭 𝐨𝐥𝐞𝐡 𝗞𝗜𝗔𝗡
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -181,11 +180,6 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                                 urlButton: {
                                     displayText: 'YouTube',
                                     url: linkyt
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: 'Saweria',
-                                    url: https://saweria.co/Kianganz
                                 }
                             }, {
                                 quickReplyButton: {
