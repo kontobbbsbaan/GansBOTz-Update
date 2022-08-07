@@ -148,23 +148,23 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     const menu2nih = `
-\`\`\`╭───❏ *❲* INFO USER* ❳\`\`\`
-\`\`\`│┏✗ *𝙽𝚊𝚖𝚎* : ${name}\`\`\`
-\`\`\`│┣✗ *𝙻𝚒𝚖𝚒𝚝* : ${limit}\`\`\`
-\`\`\`│┣✗ *𝙻𝚎𝚟𝚎𝚕* : ${level}\`\`\`
-\`\`\`│┣✗ *𝙴𝚡𝚙*   : ${exp}\`\`\`
-\`\`\`│┗✗ *𝚁𝚘𝚕𝚎*   : ${role}\`\`\`
+\`\`\`╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥* ❳\`\`\`
+\`\`\`│┏✗ *𝗡𝗔𝗠𝗔* : ${name}\`\`\`
+\`\`\`│┣✗ *𝗟𝗜𝗠𝗜𝗧* : ${limit}\`\`\`
+\`\`\`│┣✗ *𝗟𝗘𝗩𝗘𝗟* : ${level}\`\`\`
+\`\`\`│┣✗ *𝗘𝗫𝗣*   : ${exp}\`\`\`
+\`\`\`│┗✗ *𝗥𝗢𝗟𝗘*   : ${role}\`\`\`
 \`\`\`╰──────────────◩\`\`\`
-\`\`\`╭───❏ *❲* INFO BOT* ❳\`\`\`
-\`\`\`│┏✗ *Bot Name:* ${global.namabot}\`\`\`
-\`\`\`│┣✗ *Lib*: Baileys-MD\`\`\`
-\`\`\`│┣✗ *${Object.keys(global.db.data.users).length}* *Pengguna*\`\`\`
-\`\`\`│┣✗ *Prefix:* Multi\`\`\`
-\`\`\`│┣✗ *Uptime:* ${uptime}\`\`\`
-\`\`\`│┣✗ *Mode:* ${global.opts['self'] ? 'Self' : 'publik'}\`\`\`
-\`\`\`│┣✗ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* *Chat Terbanned*\`\`\`
-\`\`\`│┣✗ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned\`\`\`
-\`\`\`│┗✗ *Database:* ${rtotalreg}\`\`\`
+\`\`\`╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧* ❳\`\`\`
+\`\`\`│┏✗ *𝗕𝗢𝗧 𝗡𝗔𝗠𝗘:* ${global.namabot}\`\`\`
+\`\`\`│┣✗ *𝗟𝗜𝗕*: Baileys-MD\`\`\`
+\`\`\`│┣✗ *${Object.keys(global.db.data.users).length}* *𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔*\`\`\`
+\`\`\`│┣✗ *𝗣𝗥𝗘𝗙𝗜𝗫:* Multi\`\`\`
+\`\`\`│┣✗ *𝗨𝗣𝗧𝗜𝗠𝗘:* ${uptime}\`\`\`
+\`\`\`│┣✗ *𝗠𝗢𝗗𝗘:* ${global.opts['self'] ? 'Self' : 'publik'}\`\`\`
+\`\`\`│┣✗ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* *𝗖𝗛𝗔𝗧 𝗧𝗘𝗥𝗕𝗔𝗡𝗡𝗘𝗗*\`\`\`
+\`\`\`│┣✗ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗧𝗘𝗥𝗕𝗔𝗡𝗡𝗘𝗗\`\`\`
+\`\`\`│┗✗ *𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘:* ${rtotalreg}\`\`\`
 \`\`\`╰──────────────◩\`\`\``
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -172,10 +172,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
            jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
-           hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = Premium\n│ *Ⓛ* = Limit\n▣────────────⬣`,
+           hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = 𝗣𝗥𝗘𝗠𝗜𝗨𝗠\n│ *Ⓛ* = 𝗟𝗜𝗠𝗜𝗧\n▣────────────⬣`,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍Saweria',
+               displayText: 'Saweria',
                url: iggw
              }
 
