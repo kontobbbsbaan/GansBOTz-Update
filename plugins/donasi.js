@@ -15,11 +15,14 @@ Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
 
 Berapapun donasi kalian akan sangat berarti 👍
 
+PULSA: 083845409710
+SAWERIA: https://saweria.co/Kianganz
+
 Thanks!`
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
 const upt = `BOT Active During ${uptime}`
- let url = `https://telegra.ph/file/2df193d98191cdf1cf27e.jpg`
+ let url = `https://telegra.ph/file/2oks93d98191cdf1cf27e.jpg`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
