@@ -21,8 +21,8 @@ SAWERIA: https://saweria.co/Kianganz
 Thanks!`
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
-const upt = `BOT Active During ${uptime}`
- let url = `https://telegra.ph/file/2oks93d98191cdf1cf27e.jpg`
+const upt = `BOT Active selama ${uptime}`
+ let url = `https://telegra.ph/file/9dc0f805fb88f7ae2c360.png`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
