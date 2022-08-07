@@ -5,17 +5,17 @@ let locale = 'id'
 let chalk = require('chalk')
 global.owner = [
   ['6283845409710'],
-  ['6285733690342'],
-  ['6285732961136', 'kian', true]  
+  [''],
+  ['', 'kian ', true]  
   
 ] 
-global.ownername = [['Owner']]
+global.ownername = [['「🥶𝙺𝚒𝚊𝚗 ↺」']]
 global.namabot = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
 global.wm2 = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
-global.ownerinsta = [['@b4c00t.dtz']]
+global.ownerinsta = [['']]
 global.instalu = [['gak punya']]
-global.ytlu = [['kin']]
-global.mods = [] 
+global.ytlu = [['']]
+global.mods = ['6283845409710'] 
 global.prems = ['6283845409710'] 
 
 
