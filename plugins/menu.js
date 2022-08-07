@@ -184,8 +184,8 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'INSTAGRAM',
-                                    url: linkig
+                                    displayText: 'Saweria',
+                                    url: https://saweria.co/Kianganz
                                 }
                             }, {
                                 quickReplyButton: {
