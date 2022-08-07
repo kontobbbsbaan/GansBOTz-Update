@@ -167,7 +167,7 @@ let replace = {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let url = `https://telegra.ph/file/01a5b3b1fc41ccaa284f8.png`
+let url = `https://telegra.ph/file/7588b14357010e54c5e89.png`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
