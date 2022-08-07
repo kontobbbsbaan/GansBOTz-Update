@@ -5,7 +5,7 @@ m.reply('1 Limit Digunakan')
   if (!res.ok) throw await res.text()
   let json = await res.json()
   if (!json.url) throw 'Error!'
-  conn.sendFile(m.chat, json.url, '', 'Istri kartun', m)
+  conn.sendFile(m.chat, json.url, '', 'Istri Gwej', m)
 }
 handler.help = ['waifu']
 handler.tags = ['anime']
