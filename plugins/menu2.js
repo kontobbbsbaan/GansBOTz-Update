@@ -148,30 +148,27 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     const menu2nih = `
-\`\`\`╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥* ❳\`\`\`
-\`\`\`│┏✗ *𝗡𝗔𝗠𝗔* : ${name}\`\`\`
-\`\`\`│┣✗ *𝗟𝗜𝗠𝗜𝗧* : ${limit}\`\`\`
-\`\`\`│┣✗ *𝗟𝗘𝗩𝗘𝗟* : ${level}\`\`\`
-\`\`\`│┣✗ *𝗘𝗫𝗣*   : ${exp}\`\`\`
-\`\`\`│┗✗ *𝗥𝗢𝗟𝗘*   : ${role}\`\`\`
-\`\`\`╰──────────────◩\`\`\`
-\`\`\`╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧* ❳\`\`\`
-\`\`\`│┏✗ *𝗕𝗢𝗧 𝗡𝗔𝗠𝗘:* ${global.namabot}\`\`\`
-\`\`\`│┣✗ *𝗟𝗜𝗕*: Baileys-MD\`\`\`
-\`\`\`│┣✗ *${Object.keys(global.db.data.users).length}* *𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔*\`\`\`
-\`\`\`│┣✗ *𝗣𝗥𝗘𝗙𝗜𝗫:* Multi\`\`\`
-\`\`\`│┣✗ *𝗨𝗣𝗧𝗜𝗠𝗘:* ${uptime}\`\`\`
-\`\`\`│┣✗ *𝗠𝗢𝗗𝗘:* ${global.opts['self'] ? 'Self' : 'publik'}\`\`\`
-\`\`\`│┣✗ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* *𝗖𝗛𝗔𝗧 𝗧𝗘𝗥𝗕𝗔𝗡𝗡𝗘𝗗*\`\`\`
-\`\`\`│┣✗ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗧𝗘𝗥𝗕𝗔𝗡𝗡𝗘𝗗\`\`\`
-\`\`\`│┗✗ *𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘:* ${rtotalreg}\`\`\`
-\`\`\`╰──────────────◩\`\`\``
+╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥*
+│*𝗡𝗔𝗠𝗔* : ${name}
+│*𝗟𝗜𝗠𝗜𝗧* : ${limit}
+│*𝗟𝗘𝗩𝗘𝗟* : ${level}
+│*𝗘𝗫𝗣*   : ${exp}
+│*𝗥𝗢𝗟𝗘*   : ${role}
+╰──────────────◩
+╭───❏ *❲* 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧*
+│*𝗕𝗢𝗧 𝗡𝗔𝗠𝗘:* ${global.namabot}
+│*𝗟𝗜𝗕*: Baileys-MD
+│*𝗣𝗥𝗘𝗙𝗜𝗫:* Multi
+│*𝗨𝗣𝗧𝗜𝗠𝗘:* ${uptime}
+│*𝗠𝗢𝗗𝗘:* ${global.opts['self'] ? 'Self' : 'publik'}
+│*𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘:* ${rtotalreg}
+╰──────────────◩`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
+           jpegThumbnail: fs.readFileSync('./src/kian.jpg') },
            hydratedFooterText: `⃝▣──「 *INFO CMD* 」───⬣\n│ *Ⓟ* = 𝗣𝗥𝗘𝗠𝗜𝗨𝗠\n│ *Ⓛ* = 𝗟𝗜𝗠𝗜𝗧\n▣────────────⬣`,
            hydratedButtons: [{
              urlButton: {
