@@ -6,15 +6,15 @@ let chalk = require('chalk')
 global.owner = [
   ['6283845409710'],
   [''],
-  ['', 'kian ', true]  
+  ['', 'kian🐦 ', true]  
   
 ] 
-global.ownername = [['「🥶𝙺𝚒𝚊𝚗 ↺」']]
-global.namabot = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
-global.wm2 = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
+global.ownername = [['「 𝗞𝗜𝗔𝗡  」']]
+global.namabot = [['「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」']]
+global.wm2 = [['「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」']]
 global.ownerinsta = [['']]
-global.instalu = [['gak punya']]
-global.ytlu = [['']]
+global.instalu = [['']]
+global.ytlu = [['https://youtube.com/channel/UCVHhUd4PRoKaL79lj3qbclQ']]
 global.mods = ['6283845409710'] 
 global.prems = ['6283845409710'] 
 
@@ -52,10 +52,10 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」'
+  var sticker_name = '「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」'
   var sticker_author = ''
 } else {
-  var sticker_name = '「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」'
+  var sticker_name = '「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」'
   var sticker_author = ''
 }
 
