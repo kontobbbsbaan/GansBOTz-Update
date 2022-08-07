@@ -4,19 +4,19 @@ let locale = 'id'
 //CREATOR = GEMPY , DEVBOT
 let chalk = require('chalk')
 global.owner = [
-  ['6289509960601'],
-  ['6289509960601'],
-  ['6289509960601', 'Deffri', true]  
+  ['6283845409710'],
+  ['6285733690342'],
+  ['6285732961136', 'kian', true]  
   
 ] 
-global.ownername = [['𝐃𝐞𝐟𝐟𝐫𝐢 𝐆𝐚𝐧𝐬']]
-global.namabot = [['𝑮𝒂𝒏𝒔𝑩𝑶𝑻𝒛']]
-global.wm2 = [['Hoh']]
+global.ownername = [['Owner']]
+global.namabot = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
+global.wm2 = [['「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」']]
 global.ownerinsta = [['@b4c00t.dtz']]
 global.instalu = [['instagram.com/b4c00t.dtz']]
 global.ytlu = [['https://youtube.com/channel/UCmEQy5B3GhmfNVSrHEzv-uA']]
 global.mods = [] 
-global.prems = ['6289509960601'] 
+global.prems = ['6283845409710'] 
 
 
 global.APIs = { // API Prefix
@@ -52,11 +52,11 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Deffri Gans'
-  var sticker_author = 'By GansBOTz'
+  var sticker_name = '「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」'
+  var sticker_author = ''
 } else {
-  var sticker_name = '𝐃𝐞𝐟𝐟𝐫𝐢 𝐆𝐚𝐧𝐬'
-  var sticker_author = 'by 𝑮𝒂𝒏𝒔𝑩𝑶𝑻𝒛'
+  var sticker_name = '「𝙆𝙞𝙖𝙣-𝙗𝙤𝙩-𝙢𝙙」'
+  var sticker_author = ''
 }
 
 const file_exif = "lib/exif.json"
@@ -70,7 +70,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = 'Created by GansBOTz'
+global.wm = 'Created by 「🥶𝙺𝚒𝚊𝚗 ↺」'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
