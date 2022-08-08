@@ -5,13 +5,13 @@ let locale = 'id'
 let chalk = require('chalk')
 global.owner = [
   ['6283845409710'],
-  [''],
-  ['', 'kian🐦 ', true]  
+  ['6283845409710'],
+  ['6283845409710', 'kian🐦 ', true]  
   
 ] 
 global.ownername = [['「 𝗞𝗜𝗔𝗡  」']]
-global.namabot = [['「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」']]
-global.wm2 = [['「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」']]
+global.namabot = [['「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」']]
+global.wm2 = [['「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」']]
 global.ownerinsta = [['']]
 global.instalu = [['']]
 global.ytlu = [['https://youtube.com/channel/UCVHhUd4PRoKaL79lj3qbclQ']]
@@ -52,11 +52,11 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」'
-  var sticker_author = ''
+  var sticker_name = '\n\nBY 「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
+  var sticker_author = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
 } else {
-  var sticker_name = '「 𝗞𝗜𝗔𝗡 𝗠𝗢𝗗𝗭 𝗠𝗗 」'
-  var sticker_author = ''
+  var sticker_name = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
+  var sticker_author = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
 }
 
 const file_exif = "lib/exif.json"
@@ -70,7 +70,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = 'Created by 「🥶𝙺𝚒𝚊𝚗 ↺」'
+global.wm = '©「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
