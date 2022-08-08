@@ -21,7 +21,6 @@ SAWERIA: https://saweria.co/Kianganz
 Thanks!`
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
-const upt = `BOT Active selama ${uptime}`
  let url = `https://telegra.ph/file/9dc0f805fb88f7ae2c360.png`
 let res = await fetch(url)
 let buffer = await res.buffer()
@@ -38,14 +37,9 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                                     url: linkyt
                                 }
                             }, {
-                                urlButton: {
-                                    displayText: 'INSTAGRAM',
-                                    url: linkig
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: 'OWNER',
-                                    id: '/owner'
+                                    displayText: 'Ping',
+                                    id: '/pinh'
                                 }
                             }, {
                                 quickReplyButton: {
