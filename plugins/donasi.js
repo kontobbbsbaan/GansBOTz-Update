@@ -13,15 +13,12 @@ const anjg = `
 Hai kak ☺️ 
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
 
-Berapapun donasi kalian akan sangat berarti 👍
-
-PULSA: 083845409710
-SAWERIA: https://saweria.co/Kianganz
-
+Berapapun donasi kalian akan sangat berarti 👍\nPULSA=6283845409710\nSAWERIA=https://saweria.co/Kianganz
 Thanks!`
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
- let url = `https://telegra.ph/file/9dc0f805fb88f7ae2c360.png`
+const upt = `${ytlu}`
+ let url = `https://telegra.ph/file/c25cb9322a173e2151bd3.jpg`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -39,7 +36,7 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Ping',
-                                    id: '/pinh'
+                                    id: '/ping'
                                 }
                             }, {
                                 quickReplyButton: {
