@@ -9,9 +9,9 @@ global.owner = [
   ['6283845409710', 'kian🐦 ', true]  
   
 ] 
-global.ownername = [['「 𝗞𝗜𝗔𝗡  」']]
-global.namabot = [['「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」']]
-global.wm2 = [['「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」']]
+global.ownername = [['Kian']]
+global.namabot = [['Yakuza Bot']]
+global.wm2 = [['Yakuza Bot']]
 global.ownerinsta = [['']]
 global.instalu = [['']]
 global.ytlu = [['https://youtube.com/channel/UCVHhUd4PRoKaL79lj3qbclQ']]
@@ -52,11 +52,11 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '\n\nBY 「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
-  var sticker_author = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
+  var sticker_name = 'Yakuza Bot'
+  var sticker_author = 'Yakuza Bot'
 } else {
-  var sticker_name = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
-  var sticker_author = '「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
+  var sticker_name = 'Yakuza Bot'
+  var sticker_author = 'Yakuza Bot'
 }
 
 const file_exif = "lib/exif.json"
@@ -70,7 +70,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '©「 ʏᴀᴋᴜᴢᴀ ʙᴏᴛ ɪᴅ 」'
+global.wm = 'Yakuza Bot'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
