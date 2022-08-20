@@ -1,0 +1,71 @@
+{
+  "creds": {
+    "noiseKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "MLJQp0ZXz5M2N5XIoEM0Lvp6qL49vaJmkQOKNV5e93M="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "1JotVIRGLjlyL3q3fL0zckgt27IQZo8wfTdrtcQxE0Q="
+      }
+    },
+    "signedIdentityKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "qANwMrBCqyQYxUmteOxgFGjD+yWZFwTlBCOMx8I3IHs="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "4Ac+KKpR4kapY7jLVPzy775dAe88o4vQjE4VJX3Vmj4="
+      }
+    },
+    "signedPreKey": {
+      "keyPair": {
+        "private": {
+          "type": "Buffer",
+          "data": "yKVzf/9ktWMXRUdJasAWz3V33SYOVyPOGvWlAydmoks="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "0ZFG2IdIg5WnKqvaYoLNVZ7kUruYCUewChiQIrF8PVI="
+        }
+      },
+      "signature": {
+        "type": "Buffer",
+        "data": "L4j2v7tZ7AsKa0EIf+kJt4mEfx/5cc/1q6NLt5BLfazFideWaUpUuMPwKgWc8W7zXkFjH8fAQK3MY0boJOdJjA=="
+      },
+      "keyId": 1
+    },
+    "registrationId": 242,
+    "advSecretKey": "Kk/ycTYOR7jQ/3PphHZnFZagmsejWC/gvxq/gaY8TVQ=",
+    "processedHistoryMessages": [],
+    "nextPreKeyId": 1,
+    "firstUnuploadedPreKeyId": 1,
+    "accountSettings": {
+      "unarchiveChats": false
+    },
+    "account": {
+      "details": "CNqLqZ8EELCxg5gGGAI=",
+      "accountSignature": "hUlgPY9Zlg03qSjAQ1EiNp7gtS8Or00x0+o9ZgU6qYdk/FU9bcOXWujSbD0H4d8k3HCzEXkLh5Y7rdNbNmwzAw==",
+      "deviceSignature": "luJrKIgQHnd/ZHE1LdbfkHaUPtDoBkuHV+FOCc8NXjvbmJ4e/v4vp/3eLYqpAD0E0qcZaiuw6dCQ6dgzFhBZgw=="
+    },
+    "me": {
+      "id": "6285732961136:10@s.whatsapp.net"
+    },
+    "signalIdentities": [
+      {
+        "identifier": {
+          "name": "6285732961136:10@s.whatsapp.net",
+          "deviceId": 0
+        },
+        "identifierKey": {
+          "type": "Buffer",
+          "data": "BSkoupubfgz0kX6a6xOW5KzFuYoadbk/1vZYLcVWmml7"
+        }
+      }
+    ],
+    "platform": "android"
+  },
+  "keys": {}
+}
