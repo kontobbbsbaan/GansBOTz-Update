@@ -148,31 +148,17 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     const menu2nih = `
-Hallo Saya Adalah Yakuza Bot saya bisa membuat stiker dan lain `
+Hallo Saya Adalah Yakuza Bot saya bisa membuat stiker dan lain lain jika bot mengalami delay/lag karena terjadi nya banyak spam dan bisa membuat bot jadi ke reset sendiri`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
            jpegThumbnail: fs.readFileSync('./src/kian.jpg') },
-           hydratedFooterText: `INFO CMD\nⓁ LIMIT\nⓅ PREMIUM`,
+           hydratedFooterText: `silahkan click allmenu untuk menampilkan semua menu bot`,
            hydratedButtons: [{
-             urlButton: {
-               displayText: 'Saweria',
-               url: iggw
-             }
-
-           },
-             {
-             urlButton: {
-               displayText: 'Contact Owner',
-               url: own
-             }
-
-           },
-           {
              quickReplyButton: {
-               displayText: 'ALL Menu',
+               displayText: 'Allmenu',
                id: '.allmenu',
              }
            }]
@@ -181,7 +167,7 @@ Hallo Saya Adalah Yakuza Bot saya bisa membuat stiker dan lain `
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
    let audio = fs.readFileSync('./mp3/Play-Date-Melanie-Martinez-Cover-by-邢凯悦XKY.opus')
-   await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
+   await conn.sendFile(m.chat, audio, 'error.mp3', null, m, false)
     return await conn.relayMessage(
          m.chat,
          template.message,
