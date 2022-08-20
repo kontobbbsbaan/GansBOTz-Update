@@ -148,25 +148,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     const menu2nih = `
-╭───❏ 「 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥 」
-│𝗡𝗔𝗠𝗔 : ${name}
-│𝗟𝗜𝗠𝗜𝗧 : ${limit}
-│𝗟𝗘𝗩𝗘𝗟* : ${level}
-│𝗘𝗫𝗣   : ${exp}
-│𝗥𝗢𝗟𝗘   : ${role}
-╰──────────────◩
-╭───❏「 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧 」
-│𝗕𝗢𝗧 𝗡𝗔𝗠𝗘: ${global.namabot}
-│𝗨𝗣𝗧𝗜𝗠𝗘: ${uptime}
-│𝗠𝗢𝗗𝗘: ${global.opts['self'] ? 'Self' : 'publik'}
-│𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘: ${rtotalreg}
-╰──────────────◩`
+Hallo Saya Adalah Yakuza Bot saya bisa membuat stiker dan lain `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: menu2nih.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
+           jpegThumbnail: fs.readFileSync('./src/kian.jpg') },
            hydratedFooterText: `INFO CMD\nⓁ LIMIT\nⓅ PREMIUM`,
            hydratedButtons: [{
              urlButton: {
