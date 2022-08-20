@@ -19,7 +19,7 @@ handler.help = ['gimage <search>']
 handler.tags = ['internet']
 handler.command = /^(gimage|image)$/i
 handler.limit = true
-handler.premium = true
+handler.premium = false
 
 module.exports = handler
 
