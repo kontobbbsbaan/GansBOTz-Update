@@ -37,7 +37,7 @@ let tags = {
   'audio': '𝗔𝗨𝗗𝗜𝗢',
   'maker': '𝗠𝗔𝗞𝗘𝗥',
 }
-const com = `© ${global.ownername}`
+const com = ` `
 const linkyt = `${ytlu}`
 const linkig = `${instalu}`
 const defaultMenu = {
@@ -53,7 +53,7 @@ const defaultMenu = {
   header: '╭─────➣❲ %category ❳',
   body: '│%cmd %islimit %isPremium',
   footer: '╰──────────────',
-  after: `${global.namabot}
+  after: ` 
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -156,7 +156,7 @@ let replace = {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let url = `https://telegra.ph/file/7588b14357010e54c5e89.png`
+let url = `https://telegra.ph/file/3f64204d2b58ad2300a6a.png`
 let res = await fetch(url)
 let buffer = await res.buffer()
 let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
