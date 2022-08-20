@@ -42,22 +42,12 @@ const linkyt = `${ytlu}`
 const linkig = `${instalu}`
 const defaultMenu = {
   before: `
-╭───❏「 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧 」
-├𝗡𝗔𝗠𝗘 𝗕𝗢𝗧 : ${global.namabot}
-├𝗨𝗣𝗧𝗜𝗠𝗘 : %uptime
-├𝗧𝗢𝗧𝗔𝗟 𝗙𝗜𝗧𝗨𝗥 : ${totalf}
-╰─────◩
 ╭───❏「 𝗜𝗡𝗙𝗢 𝗨𝗦𝗘𝗥 」
 ├𝗡𝗔𝗠𝗔 : %name
 ├𝗟𝗜𝗠𝗜𝗧: %limit
 ├𝗟𝗘𝗩𝗘𝗟 : %level
 ├𝗘𝗫𝗣 : %exp
 ├𝗥𝗢𝗟𝗘 : %role
-╰─────◩
-╭───❏「 𝗜𝗡𝗙𝗢 𝗪𝗔𝗞𝗧𝗨 」
-├𝗛𝗔𝗥𝗜 : %week
-├𝗧𝗔𝗡𝗚𝗚𝗔𝗟  : %date
-├𝗪𝗔𝗞𝗧𝗨 : %time
 ╰─────◩
 `,
   header: '╭─────➣❲ %category ❳',
@@ -185,11 +175,6 @@ let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUp
                                 quickReplyButton: {
                                     displayText: 'Donasi',
                                     id: '/donasi'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Sewa',
-                                    id: '/sewa'
                                 }  
                             }, {
                                 quickReplyButton: {
